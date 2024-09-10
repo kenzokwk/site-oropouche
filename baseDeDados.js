@@ -6,7 +6,7 @@ let dados = [
    texto3: "É importante ressaltar que a gravidade da doença pode variar de pessoa para pessoa e depende de fatores como idade, estado geral de saúde e presença de outras doenças. Pessoas com doenças crônicas, como diabetes e hipertensão, e idosos podem apresentar quadros mais graves. Gestantes também são consideradas grupo de risco, pois a infecção pelo vírus Oropouche pode estar associada a complicações na gravidez e no feto.",
    imagem: "neuroimagem.jpg",
    descricao: "neuroimagem",
-   tag: "sintoma mialgia cefaleia artralgia indisposição fraqueza complicações"
+   tag: "sintoma mialgia cefaleia artralgia indisposição fraqueza complicações virus"
    
 },
 {
@@ -16,7 +16,7 @@ let dados = [
    texto3: "",
    imagem: "mosquitos.webp",
    descricao: "Culex ssp. (direita) e Maruim (esquerda)",
-   tag: "transmissão transmitir risco vetores vetorial vetor espalhar causas causa"
+   tag: "transmissão transmitir risco vetores vetorial vetor espalhar causas causa virus"
 },
 {
     titulo:"Diagnóstico",
@@ -25,7 +25,7 @@ let dados = [
     texto3: "",
     imagem: "pcr.jpg",
     descricao: "Técnica PCR",
-    tag: "diagnosticar exame laboratório identificar "
+    tag: "diagnosticar exame laboratório identificar"
 },
 {
     titulo: "Tratamento",
@@ -34,7 +34,7 @@ let dados = [
     texto3: "",
     imagem: "hospital.jpg",
     descricao: "tratamento hospitalar",
-    tag:"tratamento remédio cura tratar suporte hospital curas"
+    tag:"tratamento remédio cura tratar suporte hospital curas virus"
 },
 {
     titulo:"Prevenção e Profilaxia",
