@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+body {
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  background-color:#043C63;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+  .box {
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "SUSE", sans-serif; /* Utiliza a fonte SUSE */
+    display:flexbox;
+    z-index: 999;
+  }
+
+.texto-paragrafo{
+  position:static;
+  /*top: 400px;left: 200px; aparentemente desnecessário*/
+  color: white;
+  font-family: "SUSE", sans-serif; /* Use a fonte importada */
+  font-size: 1.3rem;
+  line-height: 1.5; /*altura das linhas , texto espremido ou não*/
+  text-align: justify; /* Justifica o texto */
+  width: 90%; /* Define a largura máxima do texto */
+  }
+  h2{
+    position: absolute;
+    top:200px;
+    left:150px;
+    font-size: 5rem;
+    
+  }
+  h1{
+    position: absolute;
+    top: 90px; /* Ajusta a distância do topo */
+    left: 240px; /* Ajusta a distância da esquerda */
+    font-size: 5rem;
+  }
+  .campo-pesquisa{
+    display: flex;
+    position: absolute;
+    top:20rem;
+    left:35rem;
+    font-size: 5rem;
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center;
+
+  }
+  
+  .image {
+    position: relative;
+    height: 100vh;
+    background-image: url(virus.webp); /* Substitua por sua imagem */
+    background-size:cover;
+    background-position:center;
+  
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right, #043C63, transparent);
+    box-shadow: inset;
+}
+h3/*.subtitle*/ {
+  
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+
+}
+.title {
+  
+  color: white;
+  font-family: "SUSE", sans-serif; /* Substitua pela fonte desejada */
+  letter-spacing: 0.4rem;
+  transform: translate(-50%, -50%);
+  text-shadow: 4px 3px 4px rgba(249, 247, 247, 0.3),
+  -2px -2px 4px rgba(247, 243, 243, 0.2); 
+
+    /* Outros estilos para o título */
+
+    
+}
+.section-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px; /* Adiciona um padding para espaçar o conteúdo */
+}
+.imagem-centralizada {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  max-width: 80%; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+section input {
+  width: 30rem; /* Largura dos inputs */
+  border: none; /* Remove a borda padrão */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 1.5rem; /* Borda arredondada */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+  color: #45474B; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+section button {
+  padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 1.5rem; /* Borda arredondada */
+  background-color: #6898c8; /* Cor de fundo do botão */
+  color: #F5F7F8; /* Cor do texto do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+  background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+
+}
+.destaque {
+  font-weight: bold;
+  /*color: #333; */
+}
+
+.lista-atividades {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-atividades li {
+  margin-bottom: 10px;
+}
+footer {
+background-color: #F5F7F8; /* Cor de fundo do rodapé */
+color: #45474B; /* Cor do texto */
+text-align: center; /* Alinha o texto ao centro */
+padding: 0; /* Espaçamento interno */
+width: 100%; /* Largura total da página */
+bottom: 0; /* Alinha ao fundo da página */
+font-size: 1rem; /* Tamanho da fonte */
+}
+a{
+  color:#9DB4C5;
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 16px; /* Reduzir o tamanho da fonte padrão */
+  }
+
+  .box {
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+  }
+
+  .texto-paragrafo {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  .campo-pesquisa {
+      flex-direction: column;
+      align-items: center;
+      input, button {
+          width: 100%;
+          margin-bottom: 1rem;
+      }
+  }
+
+  .image {
+      height: 50vh; /* Reduzir a altura da imagem */
+  }
+
+  .title {
+      font-size: 3rem;
+  }
+
+  h2, h3 {
+      font-size: 2rem;
+  }
+  footer {
+    font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+}
+}
+@media (max-width: 768px) {
+  /* Estilos para telas com largura mínima de 768px */
+  body {
+      font-size: 18px; /* Aumenta o tamanho da fonte padrão */
+  }
+
+  .box {
+      top: 2rem;
+      right: 2rem;
+      padding: 1rem;
+  }
+
+  .texto-paragrafo {
+      width: 70%; /* Permite mais espaço para outros elementos */
+  }
+
+  .campo-pesquisa {
+      flex-direction: row; /* Alinha os elementos na horizontal */
+      justify-content: space-between;
+  }
+
+  .image {
+      height: 60vh; /* Aumenta a altura da imagem */
+  }
+
+  .title {
+      font-size: 4rem;
+  }
+
+  h2, h3 {
+      font-size: 2.5rem;
+  }
+}
